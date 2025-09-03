@@ -1,0 +1,15 @@
+.button {
+  font: 600 14px 'Montserrat', sans-serif;
+  background: rgb(50, 50, 50);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: rgb(70, 70, 70);
+}
+
