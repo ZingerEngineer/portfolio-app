@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "webpack --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "dev": "webpack --config webpack.config.dev.js --watch",
+    "build": "webpack --config webpack.config.prod.js",
+    "clean": "npx rimraf dist && npx rimraf distProd && npx rimraf package-lock.json && npx rimraf node_modules"
   },
+  "sideEffects": false,
   "private": true,
   "keywords": [],
   "author": "",
@@ -17,8 +19,11 @@
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "rimraf": "^6.0.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.101.3",
+    "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2",
     "webpack-merge": "^6.0.1"
@@ -29,4 +34,3 @@
     "react-dom": "^19.1.1"
   }
 }
-
